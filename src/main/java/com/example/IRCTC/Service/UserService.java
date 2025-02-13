@@ -119,9 +119,9 @@ public class UserService {
 
 			// Check if the seat is available
 			if (seats.get(row).get(col) == 0) {
-				seats.get(row).set(col, 1);
-				train.setSeats(seats);// Mark the seat as booked
-				//train.setSeats(seats); // Update seat matrix
+				seats.get(row).set(col, 1);//Mark the seat as booked
+				train.setSeats(seats);// update seat matrix
+
 
 				System.out.println("Seat " + seatNumber + " (Row: " + row + ", Col: " + col + ") successfully booked!");
 				return Boolean.TRUE;
